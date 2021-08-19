@@ -2,12 +2,13 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
-import LoginScreen from './Containers/LoginScreen';
+import HomeScreen from './Containers/HomeScreen';
 import reportWebVitals from './reportWebVitals';
+// import 'bootstrap/dist/css/bootstrap.min.css';
 
 ReactDOM.render(
   <React.StrictMode>
-    <LoginScreen />
+    <HomeScreen />
   </React.StrictMode>,
   document.getElementById('root')
 );
