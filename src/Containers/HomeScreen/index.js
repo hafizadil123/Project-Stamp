@@ -3,11 +3,9 @@ import Vector from '../../images/Vector.png';
 import Gpp from '../../images/gpp.png';
 import ector from '../../images/ector.png';
 import vv from '../../images/vv.png';
-import Crcmw from '../../images/Crcmw.png';
 import Verify from '../../images/Verify.png';
 import Email from '../../images/Email.png';
 import Password from '../../images/Password.png';
-import Cow from '../../images/cow.png';
 
 function HomeScreen() {
   return (
