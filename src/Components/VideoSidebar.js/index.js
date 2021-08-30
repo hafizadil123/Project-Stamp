@@ -1,5 +1,5 @@
 import logo from '../../images/i6.png';
-
+import { Container, Row, Col } from 'react-bootstrap';
 
 function VideoSidebar() {
   return (
@@ -24,36 +24,50 @@ function VideoSidebar() {
           <option value="wave">Wave</option>
         </select>
       </div>
-      <div style={{ padding: '16px', marginTop: '30px' }}>
-        <img style={{ width: '90px' }} src={logo} alt="logo" />
-        <h3>Watermark Image</h3>
-        <p>A transparent, PNG, Minimum 800px is required</p>
-      </div>
+      <Container style={{ padding: '16px', marginTop: '30px' }}>
+        <Row>
+          <Col lg="2" xs="6">
+            <img style={{ width: '90px' }} src={logo} alt="logo" />
+          </Col>
+          <Col lg="10" xs="6">
+            <h3>Watermark Image</h3>
+            <p>A transparent, PNG, Minimum 800px is required</p>
+          </Col>
+        </Row>
+      </Container>
       <div className="box4" style={{ height: '40px', backgroundColor: '#F6F6F6F6', borderTop: '1px solid #E6E6E6', borderBottom: '1px solid #E6E6E6' }}>
         <h5>SPECIAL TEXT</h5>
       </div>
       <div className="form-group">
         <input type="checkbox" value="username" />
-        <label> User Name</label><br />
+        <label style={{ marginLeft: '10px' }}> User Name</label><br />
         <input type="checkbox" value="useremail" />
-        <label> User Email</label><br />
+        <label style={{ marginLeft: '10px' }}> User Email</label><br />
         <input type="checkbox" value="userip" />
-        <label> User IP Address</label><br />
+        <label style={{ marginLeft: '10px' }}> User IP Address</label><br />
         <input type="checkbox" value="orgname" />
-        <label> Organization Name</label><br />
+        <label style={{ marginLeft: '10px' }}> Organization Name</label><br />
         <input type="checkbox" value="orgaemail" />
-        <label> Organization Name</label><br />
+        <label style={{ marginLeft: '10px' }}> Organization Name</label><br />
         <input type="checkbox" value="accountname" />
-        <label> Account Name</label>
+        <label style={{ marginLeft: '10px' }}> Account Name</label>
       </div>
       <div className="box5" style={{
         height: '80px',
         backgroundColor: '#F6F6F6',
         border: '1px solid #E6E6E6',
       }}>
-        <button className="btn btn-1" style={{ backgroundColor: '#909090', boxShadow: '5px 5px 15px rgba(0, 0, 0, 0.25)', marginLeft: '30px', marginTop: '20px' }}>Customize</button>
-        <button className="btn btn-1" style={{ backgroundColor: '#909090', boxShadow: '5px 5px 15px rgba(0, 0, 0, 0.25)', marginLeft: '30px', marginTop: '20px' }}>Save</button>
-        <button className="btn btn-1" style={{ backgroundColor: '#909090', boxShadow: '5px 5px 15px rgba(0, 0, 0, 0.25)', marginLeft: '30px', marginTop: '20px' }}>Cancel</button>
+        <Row>
+          <Col xs="4">
+          <button className="btn btn-1" style={{ backgroundColor: '#909090', boxShadow: '5px 5px 15px rgba(0, 0, 0, 0.25)', marginLeft: '30px', marginTop: '20px' }}>Customize</button>
+          </Col>
+          <Col xs="4">
+            <button className="btn btn-1" style={{ backgroundColor: '#909090', boxShadow: '5px 5px 15px rgba(0, 0, 0, 0.25)', marginLeft: '30px', marginTop: '20px' }}>Save</button>
+          </Col>
+          <Col xs="4">
+            <button className="btn btn-1" style={{ backgroundColor: '#909090', boxShadow: '5px 5px 15px rgba(0, 0, 0, 0.25)', marginLeft: '30px', marginTop: '20px' }}>Cancel</button>
+          </Col>
+        </Row>
       </div>
     </div>
   );
