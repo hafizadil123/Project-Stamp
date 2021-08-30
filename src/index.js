@@ -2,13 +2,14 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
-import HomeScreen from './Containers/HomeScreen';
+import VideoSidebar from './Components/VideoSidebar.js';
+// import HomeScreen from './Containers/HomeScreen';
 import reportWebVitals from './reportWebVitals';
-// import 'bootstrap/dist/css/bootstrap.min.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 ReactDOM.render(
   <React.StrictMode>
-    <HomeScreen />
+    <VideoSidebar />
   </React.StrictMode>,
   document.getElementById('root')
 );
