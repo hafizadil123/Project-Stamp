@@ -3,9 +3,9 @@ import Vector from '../../images/Vector.png';
 import Gpp from '../../images/gpp.png';
 import ector from '../../images/ector.png';
 import vv from '../../images/vv.png';
-import Verify from '../../images/Verify.png';
 import Email from '../../images/Email.png';
 import Password from '../../images/Password.png';
+import { Link } from 'react-router-dom';
 
 function HomeScreen() {
   return (
@@ -50,21 +50,22 @@ function HomeScreen() {
                   Create more watermark?
                 </h3>
                 <form>
-                  <h6 className="headi"><img src={Verify} alt="Verify" /></h6>
                   <div className="form-group">
                     <label className="frst text-center"><img src={Email} alt="Email" /></label>
-                    <input type="email" name="email" className="form-control" />
-                    <span className="btn btn-dark btn-verify">
-                      <p className="texs text-white">Verify</p>
-                    </span>
+                    <input type="email" name="email" className="form-control" style={{ width: '50%' }} />
                   </div>
                   <div className="form-group">
                     <label className="scnd text-center"><img src={Password} alt="Password" /></label>
-                    <input type="Password" name="Password" className="form-control input2" />
+                    <input type="Password" name="Password" className="form-control input2" style={{ width: '50%' }} />
                   </div>
-                  <button className="btn btn-primary btn-md btn-block btn-enter">
-                    <p className="cont text-white">Enter</p>
-                  </button>
+                  <Link
+                    style={{ paddingTop: '12px', fontWeight: 'bold' }}
+                    className="btn btn-primary btn-md btn-block btn-enter"
+                    role="button"
+                    to="/login"
+                    >
+                    Enter
+                  </Link>
                 </form>
               </div>
             </div>
@@ -77,9 +78,14 @@ function HomeScreen() {
                   Create one Watermark
                 </h3>
               </div>
-              <button className="btn btn-dark text-white create">
+              <Link
+                style={{ paddingTop: '25px' }}
+                className="btn btn-dark text-white create"
+                role="button"
+                to="/login"
+                >
                 Create 1 Watermark Now
-              </button>
+              </Link>
             </div>
           </div>
         </div>

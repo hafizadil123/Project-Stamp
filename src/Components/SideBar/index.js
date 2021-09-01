@@ -24,7 +24,7 @@ const SideBar = () => {
           boxShadow: '5px 5px 15px rgba(66, 66, 66, 0.25)',
           borderRadius: '50px'
         }}>
-          <a style={{ textDecoration: 'none', color: 'white' }} href="#">Edit Info</a>
+          <a style={{ textDecoration: 'none', color: 'white' }}>Edit Info</a>
         </button>
       </div>
     </div>
